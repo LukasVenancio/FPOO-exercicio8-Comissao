@@ -19,7 +19,8 @@ public class Comissao {
 		vendas = leitor.nextDouble();
 
 		leitor.close();
-
+ 
+		// Sempre que for comparar dois números , comece pelo maior, o que eu não fiz ksks. Ou seja, seria melhor ter começado pelo 20000 para diminuir as regras.
 		if (vendas >= 10000 && vendas < 20000 && tempo >= 1) {
 			comissao = (vendas * 5) / 100;
 
