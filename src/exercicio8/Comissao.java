@@ -1,13 +1,11 @@
 package exercicio8;
 
-import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Comissao {
 
 	public static void main(String[] args) {
 		
-		DecimalFormat df = new DecimalFormat("R$#,###.00");
 		Scanner leitor = new Scanner(System.in);
 		
 		double vendas , tempo , comissao;
