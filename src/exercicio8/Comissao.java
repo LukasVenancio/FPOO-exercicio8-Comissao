@@ -20,7 +20,7 @@ public class Comissao {
 
 		leitor.close();
 
-		if (vendas >= 10000 && tempo >= 1) {
+		if (vendas >= 10000 && vendas < 20000 && tempo >= 1) {
 			comissao = (vendas * 5) / 100;
 
 		} else if (vendas >= 20000 && tempo >= 1) {
