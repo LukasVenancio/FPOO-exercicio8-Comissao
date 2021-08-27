@@ -1,0 +1,45 @@
+package exercicio8;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class Comissao {
+
+	public static void main(String[] args) {
+		
+		DecimalFormat df = new DecimalFormat("R$#,###.00");
+		Scanner leitor = new Scanner(System.in);
+		
+		double vendas , tempo , comissao;
+		String nome;
+		
+		System.out.print("Qual é o nome do vendedor? ");
+		nome = leitor.next();
+		System.out.print("A quantos anos " + nome + " trabalha na empresa? ");
+		tempo = leitor.nextDouble();
+		System.out.print("Qual foi o seu total de vendas de " + nome + " ? ");
+		vendas = leitor.nextDouble();
+		
+		leitor.close();
+		
+		if (vendas >= 10000 && tempo >= 1) {
+			comissao = (vendas * 5) / 100;
+
+		}else if ( vendas >=20000 && tempo >+ 1 ) {
+			comissao = (vendas * 10) / 100;
+			
+		}else {
+			comissao = (vendas * 3) / 100;
+			
+		}
+		
+		System.out.println("");
+		System.out.println("*****************************************************");
+		System.out.println("O valor da comissão de " + nome + " é: R$" + comissao);
+		
+		
+		
+
+	}
+
+}
